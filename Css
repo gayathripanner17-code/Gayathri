@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 60px 20px;
+  color: #fff;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header h1 span {
+  color: #ffe600;
+}
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+p, ul {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Skills */
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+#skills li {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+#skills li:hover {
+  transform: scale(1.1);
+  background: #ffe600;
+}
+
+/* Projects */
+.project-card {
+  background: #fff;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, background 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  background: #ffe600;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
