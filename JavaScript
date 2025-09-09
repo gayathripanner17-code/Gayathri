@@ -1,17 +1,7 @@
-// Show current year in footer
+// Show current year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Fade-in effect on scroll
-const sections = document.querySelectorAll(".fade-in");
-const options = { threshold: 0.2 };
-
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
-
-sections.forEach(section => observer.observe(section));
+// Print button
+document.getElementById("printBtn").addEventListener("click", function () {
+  window.print();
+});
