@@ -7,49 +7,77 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1 class="fade-in">Hi, I'm <span>Gayathri</span></h1>
-    <p class="fade-in delay">Aspiring Web Developer</p>
-  </header>
+  <div class="container">
 
-  <!-- About -->
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>
-      I’m Gayathri, a passionate student learning web development.
-      I enjoy creating modern and responsive websites using HTML, CSS, and JavaScript.
-    </p>
-  </section>
+    <!-- Left section -->
+    <aside class="left">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="Gayathri">
+      </div>
+      <h1>GAYATHRI</h1>
+      <p class="role">Student</p>
 
-  <!-- Skills -->
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>C++</li>
-    </ul>
-  </section>
+      <section class="profile">
+        <h2>Profile</h2>
+        <p>
+          Hi, I’m Gayathri, a passionate Web Developer who loves building clean,
+          responsive, and user-friendly websites. I specialize in HTML, CSS,
+          JavaScript. My focus is on creating modern web experiences that combine
+          functionality with design.
+        </p>
+      </section>
 
-  <!-- Projects -->
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="project-card">📌 Personal Portfolio Website</div>
-    <div class="project-card">📌 Digital Resume</div>
-    <div class="project-card">📌 Mini Calculator App</div>
-  </section>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <ul>
+          <li>📞 123-456-7890</li>
+          <li>📧 <a href="mailto:gayathripanner17@gmail.com">gayathripanner17@gmail.com</a></li>
+          <li>📍 123 Anywhere St., Any City</li>
+        </ul>
+      </section>
+    </aside>
 
-  <!-- Contact -->
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:gayathripanner17@gmail.com">gayathripanner17@gmail.com</a></p>
-  </section>
+    <!-- Right section -->
+    <main class="right">
+      <section class="education">
+        <h2>Education</h2>
+        <p><strong>Thiruvalluvar University</strong></p>
+        <p>MMES Women's Arts and Science College</p>
+        <p>Bachelor of Application</p>
+        <p class="year">2024 - 2027</p>
+      </section>
+
+      <section class="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>Native Tamil</li>
+          <li>English</li>
+        </ul>
+      </section>
+
+      <section class="projects">
+        <h2>Project</h2>
+        <p>Digital Portfolio</p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C++</li>
+        </ul>
+      </section>
+
+      <button id="printBtn">Print / Save as PDF</button>
+    </main>
+
+  </div>
 
   <footer>
-    <p>© <span id="year"></span> Gayathri | Portfolio</p>
+    <p>© <span id="year"></span> Gayathri | Student Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
