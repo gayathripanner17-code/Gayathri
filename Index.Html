@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebNest 2026 Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>WebNest 2026 Workshop</h1>
+    <p>Register for the WebNest 2026 Front-End Development Workshop and improve your web design skills.</p>
+</header>
+
+<section class="event-info">
+    <h2>Event Information</h2>
+    <table>
+        <tr>
+            <td>Event Date</td>
+            <td>15 April 2026</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>10:00 AM – 3:00 PM</td>
+        </tr>
+        <tr>
+            <td>Venue</td>
+            <td>College Auditorium</td>
+        </tr>
+        <tr>
+            <td>Organizer</td>
+            <td>Department of Computer Application</td>
+        </tr>
+    </table>
+</section>
+
+<section class="form-container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+
+        <fieldset>
+            <legend>Participant Details</legend>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Workshop Selection</legend>
+
+            <label for="workshop">Select Workshop</label>
+            <select id="workshop">
+                <option>HTML Basics</option>
+                <option>CSS Styling</option>
+                <option>JavaScript Fundamentals</option>
+            </select>
+
+            <br><br>
+            <label>Mode of Participation</label>
+            <input type="radio" name="mode" id="online"> Online
+            <input type="radio" name="mode" id="offline"> Offline
+        </fieldset>
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="4"></textarea>
+
+        <div class="declaration">
+            <input type="checkbox" id="confirm"> I confirm that the information provided is correct.
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+<section class="participants">
+    <h2>Registered Participants</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Workshop</th>
+            <th>Mode</th>
+        </tr>
+        <!-- Pre-filled participants -->
+        <tr>
+            <td>Supriya</td>
+            <td>supriya@gmail.com</td>
+            <td>9894595611</td>
+            <td>HTML Basics</td>
+            <td>Offline</td>
+        </tr>
+        <tr>
+            <td>Narmada</td>
+            <td>narmada@gmail.com</td>
+            <td>8754182935</td>
+            <td>CSS Styling</td>
+            <td>Online</td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>Email: webnest@college.com</p>
+    <p>Help Desk: 9876543210</p>
+    <p>© 2026 WebNest Workshop</p>
+</footer>
+
+</body>
+</html>
