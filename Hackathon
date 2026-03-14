@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Activity Tracker</title>
+
+<style>
+body{
+font-family:Arial;
+background:lightskyblue;
+text-align:center;
+}
+
+.card{
+background:#ffe0b2;
+width:320px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 8px gray;
+}
+
+button{
+background:#4CAF50;
+color:white;
+border:none;
+padding:8px 15px;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#2e7d32;
+}
+
+.pending{
+color:red;
+font-weight:bold;
+}
+
+.completed{
+color:green;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Student Activity Tracker</h1>
+
+<div class="card">
+<h3>1. Event Handling in JavaScript</h3>
+<p>Handle user events using JavaScript.</p>
+<span id="s1" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s1',this)">Mark Completed</button>
+</div>
+
+<div class="card">
+<h3>2. Mini Web Project</h3>
+<p>Create a small web application.</p>
+<span id="s2" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s2',this)">Mark Completed</button>
+</div>
+
+<div class="card">
+<h3>3. Form Creation</h3>
+<p>Design and implement HTML forms.</p>
+<span id="s3" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s3',this)">Mark Completed</button>
+</div>
+
+<div class="card">
+<h3>4. Web Page Layout</h3>
+<p>Create page structure using CSS.</p>
+<span id="s4" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s4',this)">Mark Completed</button>
+</div>
+
+<div class="card">
+<h3>5. Final Review</h3>
+<p>Check and test the entire project.</p>
+<span id="s5" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s5',this)">Mark Completed</button>
+</div>
+
+<div class="card">
+<h3>6. UI Design Practice</h3>
+<p>Improve user interface design.</p>
+<span id="s6" class="pending">Status: Pending</span><br>
+<button onclick="completeActivity('s6',this)">Mark Completed</button>
+</div>
+
+<h2 id="progress">0 out of 6 activities completed (0%)</h2>
+
+<script>
+let count = 0;
+let total = 6;
+
+function completeActivity(id,btn){
+
+let status = document.getElementById(id);
+
+if(status.innerHTML === "Status: Pending"){
+
+status.innerHTML = "Status: Completed";
+status.style.color = "green";
+
+btn.disabled = true;
+
+count++;
+
+let percent = Math.round((count/total)*100);
+
+document.getElementById("progress").innerHTML =
+count + " out of " + total + " activities completed (" + percent + "%)";
+
+}
+
+}
+</script>
+
+</body>
+</html>
